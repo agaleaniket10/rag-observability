@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is retrieval-augmented generation?",
+    "ground_truth": "Retrieval-augmented generation (RAG) is a technique that combines a retrieval system with a generative language model. The retrieval step fetches relevant documents from a knowledge base, and the generation step uses those documents as context to produce a grounded, accurate answer."
+  },
+  {
+    "question": "What are the main components of a RAG pipeline?",
+    "ground_truth": "A RAG pipeline typically consists of three main components: a document ingestion and chunking stage, a vector store for semantic retrieval, and a large language model that generates answers conditioned on the retrieved context."
+  },
+  {
+    "question": "How does vector similarity search work in RAG?",
+    "ground_truth": "Vector similarity search encodes both documents and queries into dense embedding vectors. At query time, the query embedding is compared against stored document embeddings using a distance metric such as cosine similarity or dot product, and the top-k most similar documents are returned as context."
+  },
+  {
+    "question": "What metrics are used to evaluate RAG quality?",
+    "ground_truth": "Common RAG evaluation metrics include faithfulness (whether the answer is grounded in the retrieved context), answer relevancy (how well the answer addresses the question), and context recall (whether the retrieved documents contain the information needed to answer the question)."
+  },
+  {
+    "question": "What is the difference between RAG and fine-tuning?",
+    "ground_truth": "Fine-tuning updates the weights of a language model on domain-specific data, making knowledge implicit in the model parameters. RAG keeps the model weights frozen and instead retrieves external knowledge at inference time, making it easier to update the knowledge base without retraining the model."
+  }
+]
